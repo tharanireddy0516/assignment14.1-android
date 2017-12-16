@@ -1,0 +1,50 @@
+a) What is the difference between Internal Storage & External Storage?
+       Internal Storage:
+                1.Internal Storage is storage that is not be directly accessible by the user, except via installed applications.
+                  By default, files saved to the internal storage are private to your application and other applications cannot access them.
+		2.Internal storage is inside computer.
+		3.Internal is connected to the computer power supply.
+		4.Internal operates using components on the motherboard. 
+		The term internal storage in Android based systems usually refers to the partition where you can store your personal data and configuration files 
+		that is separate from where the kernel, the OS, and built in apps are typically stored 
+		(You can store your apps in internal or external storage if you choose to). This is also the partition you are allowed to access without rooting.
+	External Storage:
+                1 A removable storage media is called External Storage.
+		2.External storage is outside the computer enclosure.
+		3.External storage sometimes needs an additional power source.
+		4.External storage sometimes needs a drive controller.
+		For example, in systems that don't natively contain external SD card storage (like Google's Nexus 7)
+		the system actually partitions a part of internal memory to emulate an external SD card so that software that wants to store data 
+		there has a place to put it.
+External Storage has two types:-
+     1.Primary External Storage: It is a in built shared storage which can accessed on PC by connecting your phone to PC via USB cable
+       and selecting PTP in the USB options notification.
+     
+     2.Secondary External Storage: This type of storage can be accessed on PC by connecting your phone to PC via USB cable and selecting 
+       File transfer in the USB options notification.
+
+
+b) For how long the data resides in the cache?
+      A cache is a hardware or software component that stores data so future requests for that data can be served faster.
+		1.Typically files will stay in the cache until space runs out.
+		2.it's also a matter of how much each person browses.
+		3.If a cache refresh is needed, we can force the page to not cache files.
+                4.Android’s smartphone cache is barely enough to hold 15 pages together.
+                5.The data in these locations are written back to the backing store only when they are evicted from the cache
+c) What are the critical Permissions and Normal Permissions? What are the
+   examples of each?
+	Normal Permissions:Normal permissions cover areas where your app needs to access data or resources outside the app's sandbox, 
+         but where there's very little risk to the user's privacy or the operation of other apps.
+		Example: permission to set the time zone is a normal permission. If an app declares that it needs a normal permission, 
+			 Some of the normal permissions in android:- 
+                           EXPAND_STATUS_BAR
+                           GET_PACKAGE_SIZE
+                           INSTALL_SHORTCUT
+                           INTERNET
+                           KILL_BACKGROUND_PROCESSES
+
+	Critical Permissions:Dangerous permissions cover areas where the app wants data or resources that involve the user's private information, 
+		  or could potentially affect the user's stored data or the operation of other apps
+		Example: the ability to read the user's contacts is a dangerous permission. If an app declares that it needs a dangerous permission, 
+			 the user has to explicitly grant the permission to the app.
+		       :CALL_PHONE,READ_CALL_LOG,WRITE_CALL_LOG,ADD_VOICEMAIL,USE_SIP,PROCESS_OUTGOING_CALLS,RECORD_AUDIO,READ_PHONE_STATE
